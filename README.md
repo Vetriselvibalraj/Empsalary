@@ -3,19 +3,19 @@ public class EmpSalary {
 public static void main(String[] args)
 {
 Scanner sc = new Scanner(System.in);
-System.out.println(&quot;Enter the Employee ID :&quot;);
+System.out.println("Enter the Employee ID :");
 
 int id=sc.nextInt();
-System.out.println(&quot;Enter the Employee Name :&quot;);
+System.out.println("Enter the Employee Name :");
 String name= sc.next();
-System.out.println(&quot;Enter the Employee Department :&quot;);
+System.out.println("Enter the Employee Department :");
 String dept= sc.next();
 Employee emp= new Employee(id, name, dept);
 
-System.out.println(&quot;Enter the basic pay&quot;);
+System.out.println("Enter the basic pay");
 int basic = sc.nextInt();
 
-System.out.println(&quot;*********The Employee Details are********&quot;);
+System.out.println("*********The Employee Details are********");
 emp.printEmployee();
 Salary sal = new Salary();
 sal.calculateTotal(basic);
@@ -35,10 +35,10 @@ this.Dept=Dept;
 }
 void printEmployee()
 {
-System.out.println(&quot;Employee ID: &quot;+EmpId);
-System.out.println(&quot;Employee Name: &quot;+Name);
+System.out.println("Employee ID: "+EmpId);
+System.out.println("Employee Name: "+Name);
 
-System.out.println(&quot;Employee Dept: &quot; +Dept);
+System.out.println("Employee Dept:" +Dept);
 }
 }
 class Salary
@@ -53,11 +53,11 @@ da = 0.90 * basic;
 hra = 0.20 * basic;
 oth = 0.10 * basic;
 double total = basic + da + hra + oth;
-System.out.println(&quot;Basic Salary:\t&quot; + basic);
-System.out.println(&quot;Dearness Allowance:\t&quot; + da);
-System.out.println(&quot;House Rent Allowance:\t&quot; + hra);
+System.out.println("Basic Salary:\t" + basic);
+System.out.println("Dearness Allowance:\t"+ da);
+System.out.println("House Rent Allowance:\t"+ hra);
 System.out.println(&quot;Other Allowances:\t&quot; + oth);
-System.out.println(&quot;Total Salary is: &quot; + total);
+System.out.println("Total Salary is:" + total);
 }
 }
 
